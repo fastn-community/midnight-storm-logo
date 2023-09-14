@@ -1,0 +1,185 @@
+-- import: fastn-community.github.io/logo-doc/docs
+-- import: fastn-community.github.io/logo-doc/data
+export: logos
+
+-- import: __user_name__.github.io/__repo_name__
+
+
+
+
+;; ---------------- DOCUMENTATION FOR YOUR HEADER COMPONENTS ----------------------
+;; This renders the default documentation
+
+-- docs.home:
+package-name: __repo_name__
+package-full-name: __user_name__.github.io/__repo_name__
+github: https://github.com/__user_name__/__repo_name__
+category: __user_name__.github.io/__repo_name__
+license-url: NULL
+;; license-url: https://github.com/__user_name__/__repo_name__/blob/main/LICENSE
+
+
+
+
+
+
+
+
+
+-- component quote-block:
+optional caption title:
+optional body subtitle:
+data.logos list logo-list: 
+optional string full-name:
+optional string company-name:
+optional ftd.image-src company-logo:
+
+;; =============================================================================
+;; ==================<IMPLEMENT THE LOGO QUOTE BLOCK HERE>======================
+;; =============================================================================
+
+-- ftd.text: Implement the **logo quote-block** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: quote-block
+
+
+
+
+
+
+-- component quote-divider:
+optional caption title:
+optional body subtitle:
+data.logos list logo-list: 
+optional string full-name:
+optional string company-name:
+optional ftd.image-src company-logo:
+
+;; =============================================================================
+;; ================<IMPLEMENT THE LOGO QUOTE DIVIDER HERE>======================
+;; =============================================================================
+
+-- ftd.text: Implement the **logo quote-divider** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: quote-divider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component large-title:
+optional caption title:
+optional body subtitle:
+data.logos list logo-list: 
+optional string full-name:
+optional string company-name:
+optional ftd.image-src company-logo:
+
+;; =============================================================================
+;; ==================<IMPLEMENT THE LOGO LARGE TITLE HERE>======================
+;; =============================================================================
+
+-- ftd.text: Implement the **logo large-title** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: large-title
+
+
+
+-- component small-title:
+optional caption title:
+optional body subtitle:
+data.logos list logo-list: 
+optional string full-name:
+optional string company-name:
+optional ftd.image-src company-logo:
+
+;; =============================================================================
+;; =====================<IMPLEMENT THE logo small-title HERE>=========================
+;; =============================================================================
+
+-- ftd.text: Implement the **logo small-title** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: small-title
+
+
+
+-- component without-title:
+optional caption title:
+optional body subtitle:
+data.logos list logo-list: 
+optional string full-name:
+optional string company-name:
+optional ftd.image-src company-logo:
+
+;; =============================================================================
+;; =====================<IMPLEMENT THE logo without-title HERE>=================
+;; =============================================================================
+
+-- ftd.text: Implement the **logo without-title** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: without-title
