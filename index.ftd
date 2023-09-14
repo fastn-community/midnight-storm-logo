@@ -2,8 +2,8 @@
 -- import: fastn-community.github.io/logo-doc/data
 export: logos
 
--- import: __user_name__.github.io/__repo_name__
-
+-- import: fastn-community.github.io/midnight-storm-logo
+-- import: fastn-community.github.io/midnight-storm-logo/components
 
 
 
@@ -11,12 +11,12 @@ export: logos
 ;; This renders the default documentation
 
 -- docs.home:
-package-name: __repo_name__
-package-full-name: __user_name__.github.io/__repo_name__
-github: https://github.com/__user_name__/__repo_name__
-category: __user_name__.github.io/__repo_name__
+package-name: midnight-storm-logo
+package-full-name: fastn-community.github.io/midnight-storm-logo
+github: https://github.com/fastn-community/midnight-storm-logo
+category: fastn-community.github.io/midnight-storm-logo
 license-url: NULL
-;; license-url: https://github.com/__user_name__/__repo_name__/blob/main/LICENSE
+;; license-url: https://github.com/fastn-community/midnight-storm-logo/blob/main/LICENSE
 
 
 
@@ -34,22 +34,9 @@ optional string full-name:
 optional string company-name:
 optional ftd.image-src company-logo:
 
-;; =============================================================================
-;; ==================<IMPLEMENT THE LOGO QUOTE BLOCK HERE>======================
-;; =============================================================================
-
--- ftd.text: Implement the **logo quote-block** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.quote-block-helper: $quote-block.title
+subtitle: $quote-block.subtitle
+logo-list: $quote-block.logo-list
 
 -- end: quote-block
 
@@ -66,22 +53,9 @@ optional string full-name:
 optional string company-name:
 optional ftd.image-src company-logo:
 
-;; =============================================================================
-;; ================<IMPLEMENT THE LOGO QUOTE DIVIDER HERE>======================
-;; =============================================================================
-
--- ftd.text: Implement the **logo quote-divider** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.quote-divider-helper: $quote-divider.title
+subtitle: $quote-divider.subtitle
+logo-list: $quote-divider.logo-list
 
 -- end: quote-divider
 
@@ -107,22 +81,9 @@ optional string full-name:
 optional string company-name:
 optional ftd.image-src company-logo:
 
-;; =============================================================================
-;; ==================<IMPLEMENT THE LOGO LARGE TITLE HERE>======================
-;; =============================================================================
 
--- ftd.text: Implement the **logo large-title** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.large-title-helper: $large-title.title
+logo-list: $large-title.logo-list
 
 -- end: large-title
 
@@ -136,22 +97,8 @@ optional string full-name:
 optional string company-name:
 optional ftd.image-src company-logo:
 
-;; =============================================================================
-;; =====================<IMPLEMENT THE logo small-title HERE>=========================
-;; =============================================================================
-
--- ftd.text: Implement the **logo small-title** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.small-title-helper: $small-title.title
+logo-list: $small-title.logo-list
 
 -- end: small-title
 
@@ -165,21 +112,7 @@ optional string full-name:
 optional string company-name:
 optional ftd.image-src company-logo:
 
-;; =============================================================================
-;; =====================<IMPLEMENT THE logo without-title HERE>=================
-;; =============================================================================
-
--- ftd.text: Implement the **logo without-title** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.without-title-helper: 
+logo-list: $without-title.logo-list
 
 -- end: without-title
